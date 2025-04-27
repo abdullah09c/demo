@@ -40,9 +40,39 @@ div {
     background: rgba(0, 0, 0, 0.2); /* Slight transparency for contrast */
 }
 
-/* Center the h1 */
+/* Center the h1 and add animation */
 h1 {
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+/* Keyframes for h1 animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Style the icon */
+h1 i {
+    margin-right: 10px;
+    color: #ffd700; /* Gold color for the icon */
+    animation: spin 5s linear infinite;
+}
+
+/* Keyframes for spinning icon */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
